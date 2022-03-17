@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JiuQiangXu_XuhuiWeng_COMP304Sec003_Lab4_Ex1</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
