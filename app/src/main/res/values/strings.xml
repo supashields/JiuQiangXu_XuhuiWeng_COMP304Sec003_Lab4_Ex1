@@ -1,4 +1,31 @@
 <resources>
     <string name="app_name">JiuQiangXu_XuhuiWeng_COMP304Sec003_Lab4_Ex1</string>
     <string name="title_activity_maps">MapsActivity</string>
+        <string-array name="cuisine">
+            <item>Chinese</item>
+            <item>Italian</item>
+            <item>Greek</item>
+            <item>Indian</item>
+            <item>Japanese</item>
+        </string-array>
+    <string-array name="chinese">
+        <item>Mandarin</item>
+        <item>Magic Noodles</item>
+    </string-array>
+    <string-array name="italian">
+        <item>Mario Pizza</item>
+        <item>John Pasta</item>
+    </string-array>
+    <string-array name="greek">
+        <item>Alexandros</item>
+        <item>Jimmy the Greek</item>
+    </string-array>
+    <string-array name="indian">
+        <item>Butter Chicken</item>
+        <item>Curry King</item>
+    </string-array>
+    <string-array name="japanese">
+        <item>Gyubee BBQ</item>
+        <item>Izakaya</item>
+    </string-array>
 </resources>
