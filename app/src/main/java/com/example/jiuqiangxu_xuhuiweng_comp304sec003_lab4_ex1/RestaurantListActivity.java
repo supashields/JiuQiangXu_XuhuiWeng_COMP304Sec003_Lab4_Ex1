@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,12 +41,18 @@ public class RestaurantListActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                String name =(String) (listView.getItemAtPosition(position));
+                Log.i("###Name", name);
 
+                //System.out.println(selectedFromList);
+                //Log.i("text",selectedFromList);
                 //intent for each item on list clicked
                 Intent intent0 = new Intent(RestaurantListActivity.this,MapsActivity.class);
-                double lat = 43.6532;
-                double lng = -79.3832;
-                double[] coordinates = new double[] {lat, lng};
+                intent0.putExtra("restaurantsName",name);
+                //double lat = 43.6532;
+               // double lng = -79.3832;
+                //double[] coordinates = new double[] {lat, lng};
+
 //                for(int i = 0; i < restaurants.size(); i++){
 //
 //                }
@@ -67,7 +74,7 @@ public class RestaurantListActivity extends AppCompatActivity {
 //                        break;
 //                }
                 startActivity(intent0);
-                intent0.putExtra("coordinates",coordinates);
+                //intent0.putExtra("coordinates",coordinates);
             }
         });
     }
